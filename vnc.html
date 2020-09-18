@@ -37,6 +37,15 @@
     <link rel="stylesheet" href="include/base.css" />
     <link rel="alternate stylesheet" href="include/black.css" TITLE="Black" />
     <link rel="alternate stylesheet" href="include/blue.css" TITLE="Blue" />
+    <script>
+            document.addEventListener("visibilitychange", function() {
+console.log(document.hidden, document.visibilityState);
+}, false);
+window.addEventListener("resize", myFunction);
+function myFunction(){
+  console.log("Size changed");
+}
+    </script>
 
     <!--
     <script type='text/javascript'
